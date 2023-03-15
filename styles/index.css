@@ -1,0 +1,188 @@
+/* Declare fonts */
+@font-face {
+    font-family: HelveticaRegular;
+    src: url(/fonts/Helvetica-Font/Helvetica.ttf)
+}
+
+@font-face {
+    font-family: HelveticaBold;
+    src: url(/fonts/Helvetica-Font/Helvetica-Bold.ttf);
+}
+
+@font-face {
+    font-family: AvenirHeavy;
+    src: url(/fonts/avenir_ff/AvenirLTStd-Black.otf);
+}
+
+@font-face {
+    font-family: AvenirBook;
+    src: url(/fonts/avenir_ff/AvenirLTStd-Book.otf);
+}
+
+@font-face {
+    font-family: AvenirRoman;
+    src: url(/fonts/avenir_ff/AvenirLTStd-Roman.otf);
+}
+
+@font-face {
+    font-family: AvenirRegular;
+    src: url(/fonts/avenir_ff/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+    font-family: AvenirMedium;
+    src: url(/fonts/avenir_ff/Avenir\ LT\ 65\ Medium.ttf);
+}
+
+body {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 80%;
+}
+
+.header {
+    display: grid;
+    grid-row: auto auto auto;
+    column-gap: 50px;
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    flex: 1fr 1fr 50%;
+}
+
+.header__logo--img {
+    width: 49px;
+    height: 35px;
+    padding-right: 50px;
+}
+
+.header__logo--nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #4B5D68;
+}
+
+.header__logo--nav ul,
+li {
+    list-style-type: none;
+    /* display: inline-block; */
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+.header__logo--nav {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #ffcc22;
+}
+
+.header__logo--nav-style1 a {
+    font-family: AvenirHeavy;
+    font-size: 16px;
+    color: #212353;
+    font-size: 16px;
+}
+
+.header__logo--nav-style2 a {
+    font-family: AvenirMedium;
+    font-size: 16px;
+    color: #4B5D68;
+}
+
+.header__logo--button {
+    width: 210px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid grey;
+    font-family: AvenirHeavy;
+    font-size: 16px;
+}
+
+.header__logo--button-image {
+    width: 20px;
+    height: 14px;
+    justify-self: right;
+    margin-left: 10px;
+}
+
+.header__logo--button a {
+    color: #ffcc22;
+    /* background-color: blueviolet; */
+    padding: 10px;
+    text-align: center;
+}
+/* Data Storage section */
+
+.datastorage {
+    display: flex;
+    column-count: 70% 50%;
+    justify-content: space-between;
+}
+
+.datastorage__title {
+    font-family: HelveticaBold;
+    font-size: 80px;
+    width: 645px;
+    height: 184px;
+}
+
+.datastorage__description {
+    font-family: AvenirRegular;
+    font-weight: demibold;
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+
+.datastorage__button {
+    font-family: AvenirHeavy;
+    font-size: 18px;
+    background-color: #9C69E2;
+    color: #FFFFFF;
+    width: 170px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+}
+
+.datastorage__img {
+    width: 685px;
+    height: 368px;
+    position: relative;
+    bottom: 100px;
+}
+/* Storage Bank Section */
+
+.storage-bank {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    border-radius: 40px;
+}
+
+.storage-bank__imag {
+    justify-self: left;
+    justify-content: center;
+}
+
+.storage-bank__title {
+    font-family: HelveticaBold;
+    font-size: 40px;
+    color: #212353;
+}
+
+.storage-bank__description {
+    font-family: AvenirRegular;
+    font-size: 18px;
+    font-weight: Semibold;
+    color: #5C727F;
+}
